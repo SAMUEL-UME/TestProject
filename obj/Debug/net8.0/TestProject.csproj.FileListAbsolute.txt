@@ -1,0 +1,14 @@
+/Users/macbookpro/CsharpProjects/TestProject/bin/Debug/net8.0/TestProject
+/Users/macbookpro/CsharpProjects/TestProject/bin/Debug/net8.0/TestProject.deps.json
+/Users/macbookpro/CsharpProjects/TestProject/bin/Debug/net8.0/TestProject.runtimeconfig.json
+/Users/macbookpro/CsharpProjects/TestProject/bin/Debug/net8.0/TestProject.dll
+/Users/macbookpro/CsharpProjects/TestProject/bin/Debug/net8.0/TestProject.pdb
+/Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.AssemblyInfoInputs.cache
+/Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.AssemblyInfo.cs
+/Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.csproj.CoreCompileInputs.cache
+/Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.dll
+/Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/refint/TestProject.dll
+/Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.pdb
+/Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.genruntimeconfig.cache
+/Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/ref/TestProject.dll
