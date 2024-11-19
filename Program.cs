@@ -1,66 +1,37 @@
-﻿using System;
+﻿
+using System;
 
-namespace BasicCalculator
+namespace TimeInCountry
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Basic Calculator");
-            Console.WriteLine("----------------");
+            Console.WriteLine("Enter the timezone ID of the country (e.g., 'Eastern Standard Time', 'Central European Standard Time'):");
+            string timeZoneId = Console.ReadLine();
 
-            while (true)
+            try 
             {
-                try
-                {
-                    Console.Write("Enter first number: ");
-                    double num1 = Convert.ToDouble(Console.ReadLine());
+                // Get the specified timezone
+                TimeZoneInfo timeZone = TimeZoneInfo.FindSystemTimeZoneById(timeZoneId);
 
-                    Console.Write("Enter an operator (+, -, *, /): ");
-                    char operation = Convert.ToChar(Console.ReadLine());
+                // Get the current time in that timezone
+                DateTime currentTime = TimeZoneInfo.ConvertTime(DateTime.Now, timeZone);
 
-                    Console.Write("Enter second number: ");
-                    double num2 = Convert.ToDouble(Console.ReadLine());
-
-                    double result;
-
-                    switch (operation)
-                    {
-                        case '+':
-                            result = num1 + num2;
-                            break;
-                        case '-':
-                            result = num1 - num2;
-                            break;
-                        case '*':
-                            result = num1 * num2;
-                            break;
-                        case '/':
-                            if (num2 == 0)
-                            {
-                                Console.WriteLine("Error: Cannot divide by zero.");
-                                continue;
-                            }
-                            result = num1 / num2;
-                            break;
-                        default:
-                            Console.WriteLine("Invalid operator.");
-                            continue;
-                    }
-
-                    Console.WriteLine($"Result: {num1} {operation} {num2} = {result}");
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("Invalid input. Please enter valid numbers.");
-                }
-
-                Console.Write("Do you want to perform another calculation? (y/n): ");
-                string choice = Console.ReadLine().ToLower();
-                if (choice != "y") break;
+                Console.WriteLine($"The current time in {timeZoneId} is: {currentTime}");
             }
-
-            Console.WriteLine("Thank you for using the calculator. Goodbye!");
+            catch (TimeZoneNotFoundException)
+            {
+                Console.WriteLine("The specified timezone ID was not found.");
+            }
+            catch (InvalidTimeZoneException)
+            {
+                Console.WriteLine("The specified timezone ID is invalid.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
         }
     }
 }

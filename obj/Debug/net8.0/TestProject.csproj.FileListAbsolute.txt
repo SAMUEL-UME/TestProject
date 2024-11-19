@@ -12,3 +12,4 @@
 /Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.pdb
 /Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.genruntimeconfig.cache
 /Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/ref/TestProject.dll
+/Users/macbookpro/CsharpProjects/TestProject/obj/Debug/net8.0/TestProject.sourcelink.json
